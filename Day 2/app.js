@@ -8,15 +8,17 @@ reverseString("hello");
 function maximumNumber1(arr) {
   console.log(Math.max(...arr));
 }
+
 maximumNumber1([1, 2, 4, 3, 9, 5, 8, 6, 7]);
 
 function maximumNumber2(arr) {
   let max = arr[0];
   arr.filter((num) => {
     if (num > max) {
-      max = arr;
+      max = num;
     }
   });
+  console.log(max);
 }
 maximumNumber2([1, 2, 4, 3, 9, 5, 8, 6, 7]);
 
